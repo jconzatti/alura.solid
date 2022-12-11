@@ -5,7 +5,7 @@
         <FrameworkType>None</FrameworkType>
         <MainSource>rh.linha.comando.dpr</MainSource>
         <Base>True</Base>
-        <Config Condition="'$(Config)'==''">Debug</Config>
+        <Config Condition="'$(Config)'==''">Release</Config>
         <Platform Condition="'$(Platform)'==''">Win64</Platform>
         <TargetedPlatforms>147</TargetedPlatforms>
         <AppType>Console</AppType>
@@ -127,7 +127,10 @@
         <DCCReference Include="..\entidade\UJConzatti.RH.Entidade.TipoCargo.pas"/>
         <DCCReference Include="..\entidade\UJConzatti.RH.Entidade.Funcionario.pas"/>
         <DCCReference Include="..\util\UJConzatti.RH.Util.ValidacaoException.pas"/>
-        <DCCReference Include="..\casouso\UJConzatti.RH.CasoUso.Reajustor.Salario.pas"/>
+        <DCCReference Include="..\casouso\UJConzatti.RH.CasoUso.Reajustador.Salario.pas"/>
+        <DCCReference Include="..\casouso\UJConzatti.RH.CasoUso.Validador.ReajusteSalarial.Percentual.pas"/>
+        <DCCReference Include="..\casouso\UJConzatti.RH.CasoUso.Validador.ReajusteSalarial.Periodicidade.pas"/>
+        <DCCReference Include="..\casouso\UJConzatti.RH.CasoUso.Validador.ReajusteSalarial.pas"/>
         <BuildConfiguration Include="Release">
             <Key>Cfg_2</Key>
             <CfgParent>Base</CfgParent>
