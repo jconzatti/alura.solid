@@ -17,7 +17,7 @@ type
       FDataUltimoReajuste: TDateTime;
    public
       constructor Create(aNome, aCPF: String; aTipoCargo: TEntidadeTipoCargo; aSalario: Currency);
-      procedure ReajustarSalario(aAumento: Currency);
+      procedure AtualizarSalario(aNovoSalario: Currency);
       property Nome: String read FNome write FNome;
       property CPF: String read FCPF write FCPF;
       property TipoCargo: TEntidadeTipoCargo read FTipoCargo write FTipoCargo;
@@ -35,16 +35,12 @@ begin
    FNome      := aNome;
    FCPF       := aCPF;
    FTipoCargo := aTipoCargo;
-   FSalario   := FSalario;
+   FSalario   := aSalario;
 end;
 
-procedure TEntidadeFuncionario.ReajustarSalario(aAumento : Currency);
-var PercentualReajuste : Double;
+procedure TEntidadeFuncionario.AtualizarSalario(aNovoSalario : Currency);
 begin
-   PercentualReajuste := aAumento/FSalario;
-   if PercentualReajuste > 0.4 then
-      raise TUtilValidacaoException.Create('Reajuste não pode ser superior a 40% do salário!');
-	FSalario := FSalario + aAumento;
+	FSalario            := aNovoSalario;
 	FDataUltimoReajuste := Now;
 end;
 
