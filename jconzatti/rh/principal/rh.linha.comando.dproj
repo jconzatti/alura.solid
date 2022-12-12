@@ -124,13 +124,16 @@
         <DelphiCompile Include="$(MainSource)">
             <MainSource>MainSource</MainSource>
         </DelphiCompile>
-        <DCCReference Include="..\entidade\UJConzatti.RH.Entidade.TipoCargo.pas"/>
+        <DCCReference Include="..\entidade\UJConzatti.RH.Entidade.Cargo.pas"/>
         <DCCReference Include="..\entidade\UJConzatti.RH.Entidade.Funcionario.pas"/>
         <DCCReference Include="..\util\UJConzatti.RH.Util.ValidacaoException.pas"/>
-        <DCCReference Include="..\casouso\UJConzatti.RH.CasoUso.Reajustador.Salario.pas"/>
-        <DCCReference Include="..\casouso\UJConzatti.RH.CasoUso.Validador.ReajusteSalarial.Percentual.pas"/>
-        <DCCReference Include="..\casouso\UJConzatti.RH.CasoUso.Validador.ReajusteSalarial.Periodicidade.pas"/>
-        <DCCReference Include="..\casouso\UJConzatti.RH.CasoUso.Validador.ReajusteSalarial.pas"/>
+        <DCCReference Include="..\casouso\reajuste-salarial\UJConzatti.RH.CasoUso.Reajustador.Salario.pas"/>
+        <DCCReference Include="..\casouso\reajuste-salarial\UJConzatti.RH.CasoUso.Validador.ReajusteSalarial.pas"/>
+        <DCCReference Include="..\casouso\reajuste-salarial\UJConzatti.RH.CasoUso.Validador.ReajusteSalarial.Percentual.pas"/>
+        <DCCReference Include="..\casouso\reajuste-salarial\UJConzatti.RH.CasoUso.Validador.ReajusteSalarial.Periodicidade.pas"/>
+        <DCCReference Include="..\casouso\promocao-cargo\UJConzatti.RH.CasoUso.Promovedor.Cargo.pas"/>
+        <DCCReference Include="..\entidade\UJConzatti.RH.Entidade.Terceirizado.pas"/>
+        <DCCReference Include="..\entidade\UJConzatti.RH.Entidade.DadoPessoal.pas"/>
         <BuildConfiguration Include="Release">
             <Key>Cfg_2</Key>
             <CfgParent>Base</CfgParent>
@@ -158,6 +161,12 @@
                         <Overwrite>true</Overwrite>
                     </Platform>
                 </DeployFile>
+                <DeployFile LocalName="Win32\Debug\rh.linha.comando.exe" Configuration="Debug" Class="ProjectOutput">
+                    <Platform Name="Win32">
+                        <RemoteName>rh_linha_comando.exe</RemoteName>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
                 <DeployFile LocalName="$(BDS)\Redist\iossimulator\libcgunwind.1.0.dylib" Class="DependencyModule">
                     <Platform Name="iOSSimulator">
                         <Overwrite>true</Overwrite>
@@ -168,20 +177,14 @@
                         <Overwrite>true</Overwrite>
                     </Platform>
                 </DeployFile>
-                <DeployFile LocalName="Win64\Debug\rh.linha.comando.rsm" Configuration="Debug" Class="DebugSymbols">
-                    <Platform Name="Win64">
-                        <RemoteName>rh_linha_comando.rsm</RemoteName>
-                        <Overwrite>true</Overwrite>
-                    </Platform>
-                </DeployFile>
-                <DeployFile LocalName="Win64\Debug\rh.linha.comando.exe" Configuration="Debug" Class="ProjectOutput">
+                <DeployFile LocalName="Win64\Release\rh.linha.comando.exe" Configuration="Release" Class="ProjectOutput">
                     <Platform Name="Win64">
                         <RemoteName>rh_linha_comando.exe</RemoteName>
                         <Overwrite>true</Overwrite>
                     </Platform>
                 </DeployFile>
-                <DeployFile LocalName="Win32\Debug\rh.linha.comando.exe" Configuration="Debug" Class="ProjectOutput">
-                    <Platform Name="Win32">
+                <DeployFile LocalName="Win64\Debug\rh.linha.comando.exe" Configuration="Debug" Class="ProjectOutput">
+                    <Platform Name="Win64">
                         <RemoteName>rh_linha_comando.exe</RemoteName>
                         <Overwrite>true</Overwrite>
                     </Platform>
