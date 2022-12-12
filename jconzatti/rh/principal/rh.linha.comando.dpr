@@ -15,7 +15,11 @@ uses
   UJConzatti.RH.CasoUso.Validador.ReajusteSalarial.Periodicidade in '..\casouso\reajuste-salarial\UJConzatti.RH.CasoUso.Validador.ReajusteSalarial.Periodicidade.pas',
   UJConzatti.RH.CasoUso.Promovedor.Cargo in '..\casouso\promocao-cargo\UJConzatti.RH.CasoUso.Promovedor.Cargo.pas',
   UJConzatti.RH.Entidade.Terceirizado in '..\entidade\UJConzatti.RH.Entidade.Terceirizado.pas',
-  UJConzatti.RH.Entidade.DadoPessoal in '..\entidade\UJConzatti.RH.Entidade.DadoPessoal.pas';
+  UJConzatti.RH.Entidade.DadoPessoal in '..\entidade\UJConzatti.RH.Entidade.DadoPessoal.pas',
+  UJConzatti.RH.CasoUso.Reajuste in '..\casouso\reajuste\UJConzatti.RH.CasoUso.Reajuste.pas',
+  UJConzatti.RH.CasoUso.Reajuste.Anuenio in '..\casouso\reajuste\UJConzatti.RH.CasoUso.Reajuste.Anuenio.pas',
+  UJConzatti.RH.CasoUso.ReajusteTributavel in '..\casouso\reajuste\UJConzatti.RH.CasoUso.ReajusteTributavel.pas',
+  UJConzatti.RH.CasoUso.ReajusteTributavel.Promocao in '..\casouso\reajuste\UJConzatti.RH.CasoUso.ReajusteTributavel.Promocao.pas';
 
 begin
    try
