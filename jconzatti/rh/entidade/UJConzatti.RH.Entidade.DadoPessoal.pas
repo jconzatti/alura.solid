@@ -12,7 +12,6 @@ type
       FCPF: String;
       FCargo: TEntidadeCargo;
       FSalario: Currency;
-      FDataUltimoReajuste: TDateTime;
    public
       constructor Create(aNome, aCPF: String; aCargo: TEntidadeCargo; aSalario: Currency);
       property Nome: String read FNome write FNome;
